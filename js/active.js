@@ -2,8 +2,7 @@ function openNav() {
     document.getElementById("menu-toggle").style.display = "none";
     document.getElementById("nc-wrap").style.display = "flex";
     document.getElementById("closebtn").style.display = "block";
-    document.getElementById("nav").style.width = "270px";
-    document.getElementById("main").style.marginRight = "270px";
+    document.getElementById("nav-i").style.width = "300px";
 }
 
 
@@ -11,8 +10,7 @@ function closeNav() {
     document.getElementById("closebtn").style.display = "none";
     document.getElementById("menu-toggle").style.display = "block";
     document.getElementById("nc-wrap").style.display = "none";
-    document.getElementById("nav").style.width = "60px";
-    document.getElementById("main").style.marginRight = "60px";
+    document.getElementById("nav-i").style.width = "60px";
 }
 
 

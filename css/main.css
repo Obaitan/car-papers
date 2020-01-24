@@ -7,9 +7,9 @@ body {
     margin: 0;
 }
 
-.nav {
+.nav-i {
     display: block;
-    background-color: #016868;
+    background-color: #bcbcd194;
     height: 100vh;
     width: 60px;
     position: fixed;
@@ -98,6 +98,7 @@ body {
 
 #logo {
     margin-top: 4rem;
+    width: 95%;
 }
 
 ul {
@@ -114,7 +115,7 @@ li {
 
 #link1, #link2, #link3 {
     font-family: 'Arimo', sans-serif;
-    color: #fff;
+    color: #1b212c;
     font-size: .84rem;
     font-weight: 550;
     text-transform: uppercase;
@@ -127,8 +128,7 @@ li {
 }
 
 .main {
-    transition: margin-right .15s;
-    height: 100%;
+    /* transition: margin-right .15s; */
 }
 
 /* Home */
@@ -163,14 +163,71 @@ li {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    position: relative;
+    top: 3rem;
 }
 
 .half {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
     /* align-items: center; */
     justify-content: center;
+}
+
+.h-logo {
+    width: 70%;
+}
+
+.h-text {
+    font-family: 'Questrial', sans-serif;
+    font-size: 1.45rem;
+    color: #787878;
+}
+
+ul.b-points {
+    list-style-type: none;
+    position: relative;
+    margin-top: 0;
+    margin-left: 1rem;
+}
+
+ul.b-points>li {
+    margin-left: 2rem;
+    padding-bottom: 6px;
+}
+
+ul.b-points>li:before {
+    content: ' ';
+    background: #00a450;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 4px solid #00a450;
+    left: 4px;
+    width: 10px;
+    height: 10px;
+    z-index: 400;
+    margin-top: .55rem;
+}
+
+.points {
+    font-family: 'Arimo', sans-serif;
+    font-size: 1.2rem;
+    color: #285657;
+    margin-bottom: 0;
+}
+
+.highlight2 {
+    color: #95b903;
+}
+
+.highlight3 {
+    color: #95b903;
+    font-weight: 600;
+    font-size: 1.6rem;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: .05rem;
 }
 
 .btn-div {
@@ -179,6 +236,9 @@ li {
 }
 
 .btn {
+    font-family: 'Arimo', sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
     padding: .5rem 1.35rem !important;
 }
 
@@ -309,6 +369,23 @@ ul.timeline>li:before {
     padding: 6rem 0;
 }
 
+.glue {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav {}
+
+a.nav-link {
+    font-family: 'Heebo', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    /* color: #4e4d4d; */
+    padding: 2rem 1.5rem;
+    border: 1px #cfcfcf !important
+}
+
 .partners {
     display: flex;
     flex-wrap: wrap;
@@ -340,7 +417,11 @@ ul.timeline>li:before {
 }
 
 .p-logo {
-    height: 50px;
+    width: 50%;
+}
+
+.p-logo2 {
+    width: 80%;
 }
 
 /* App */
@@ -402,6 +483,29 @@ ul.timeline>li:before {
     color: #95b903 !important;
 }
 
+.material-icons {
+    color: #ec6b33;
+}
+
+.address {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.caption {
+    font-family: 'Arimo', sans-serif;
+    font-size: .93rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #016868;
+}
+
+.text {
+    font-family: 'Questrial', sans-serif;
+    font-size: .92rem;
+    color: #4e4d4d;
+}
+
 /* footer */
 
 .footer {
@@ -422,6 +526,146 @@ ul.timeline>li:before {
     color: #fff;
 }
 
+/* login */
+
+.login-backdrop {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    padding: 0;
+    z-index: 0;
+}
+
+.login-backdrop::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/background-image.jpg');
+    background-color: whitesmoke;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.whole {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 3rem 0;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
+}
+
+.btn-success {
+    color: #fff;
+    background-image: linear-gradient(to right, #68ec3e 0%, #68ec3e 45%, #28a745 100%);
+    border-color: transparent;
+}
+
+.btn-success:hover {
+    background-position: right center;
+}
+
+.other-half {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #44e644d7;
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+form {
+    width: 50%;
+}
+
+.form-control {
+    height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.l-ht {
+    font-family: 'Arimo', sans-serif;
+    color: #27a444;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+}
+
+.b-text {
+    font-family: 'Arimo', sans-serif;
+    font-size: .9rem;
+    color: #4e4d4d;
+}
+
+a.l-info {
+    font-weight: 600;
+    text-decoration: none;
+    color: #95b903;
+}
+
+a.l-info:hover {
+    opacity: .6;
+}
+
+.white {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.ll-wrap {
+    width: 100%;
+}
+
+#l-logo {
+    width: 65%;
+}
+
+/* start */
+
+.s-half {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #44e644d7;
+    padding: 3rem 10rem;
+    text-align: center;
+}
+
+#s-logo {
+    width: 70%;
+}
+
 @media only screen and (max-width: 1025px) {
     .v-line {
         display: none;
@@ -431,3 +675,14 @@ ul.timeline>li:before {
         /* min-height: 150px; */
     }
 }
+
+@media (max-width: 767.98px) {
+    form {
+        width: 80%;
+    }
+    .other-half {
+        padding: 2rem;
+    }
+    .login-backdrop {
+        height: fit-content;
+    }
