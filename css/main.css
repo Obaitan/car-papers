@@ -10,7 +10,7 @@ body {
 .nav-i {
     display: block;
     background-color: #bcbcd194;
-    height: 100vh;
+    /* height: 100vh; */
     width: 60px;
     position: fixed;
     z-index: 1008;
@@ -267,6 +267,7 @@ ul.b-points>li:before {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     /* padding: 0 2rem; */
 }
 
@@ -390,12 +391,11 @@ a.nav-link {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 35vh;
 }
 
 .blue {
     background-color: #016868;
-    height: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -404,15 +404,17 @@ a.nav-link {
 
 .partners-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 2rem 2rem 2rem 0;
-    border: 1px solid #d4d9df;
+    /* align-items: center; */
+    padding: 1.5rem 1rem;
 }
 
 .pl-wrap {
-    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
     text-align: center;
 }
 
@@ -421,7 +423,11 @@ a.nav-link {
 }
 
 .p-logo2 {
-    width: 80%;
+    width: 60%;
+}
+
+.p-logo3 {
+    width: 70%;
 }
 
 /* App */
