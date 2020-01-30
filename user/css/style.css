@@ -20701,6 +20701,7 @@ ul li, ol li, dl li {
   font-size: 0.875rem;
   line-height: 1;
   vertical-align: middle;
+  margin: auto 5px;
 }
 
 .sidebar .nav .nav-item .nav-link .badge {
@@ -21648,4 +21649,15 @@ ul li, ol li, dl li {
   }
 }
 
-/*# sourceMappingURL=maps/style.css.map */
+/* Custom */
+
+.beed {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 0 7px;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+}

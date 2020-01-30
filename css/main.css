@@ -127,10 +127,6 @@ li {
     color: #f7e602;
 }
 
-.main {
-    /* transition: margin-right .15s; */
-}
-
 /* Home */
 
 #home {
@@ -375,8 +371,6 @@ ul.timeline>li:before {
     flex-wrap: wrap;
     justify-content: center;
 }
-
-nav {}
 
 a.nav-link {
     font-family: 'Heebo', sans-serif;
@@ -692,3 +686,4 @@ a.l-info:hover {
     .login-backdrop {
         height: fit-content;
     }
+}
