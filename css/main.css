@@ -366,11 +366,12 @@ ul.timeline>li:before {
     padding: 6rem 0;
 }
 
+/* 
 .glue {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
+} */
 
 a.nav-link {
     font-family: 'Heebo', sans-serif;

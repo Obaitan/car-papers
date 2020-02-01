@@ -347,3 +347,14 @@
   });
 })(jQuery);
 
+
+(function () {
+  // instantiate a moment object
+  var NowMoment = moment().format('LL');
+
+  // display value of moment object in #displayMoment div
+  var eDate = document.getElementById('date');
+  eDate.innerHTML = NowMoment;
+})();
+
+
