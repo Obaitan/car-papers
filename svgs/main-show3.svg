@@ -41,9 +41,9 @@
      inkscape:window-height="838"
      id="namedview1542"
      showgrid="false"
-     inkscape:zoom="0.14637823"
-     inkscape:cx="1066.8876"
-     inkscape:cy="1061.1809"
+     inkscape:zoom="0.58551294"
+     inkscape:cx="623.25721"
+     inkscape:cy="547.38331"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
@@ -225,7 +225,7 @@
       <polygon
          points="846.21,110.88 793.7,760.47 317.27,721.39 369.78,71.81 "
          id="polygon1487-2"
-         style="opacity:0.66300001;fill:#45e644;fill-opacity:1"
+         style="opacity:0.795;fill:#03a299;fill-opacity:1"
          transform="matrix(1.3385099,0,0,1.3385099,-60.653993,1223.6788)" />
       <polygon
          style="fill:#f9f0ae;fill-opacity:1"
@@ -259,7 +259,7 @@
          width="71.918137"
          height="72.440155"
          id="rect1511-1"
-         style="opacity:0.67299996;fill:#45e644;fill-opacity:1;stroke-width:1.33850992" />
+         style="opacity:0.503;fill:#03a299;fill-opacity:1;stroke-width:1.33850992" />
       <rect
          style="fill:#285657;fill-opacity:1;stroke-width:1.33850992"
          x="522.55786"
@@ -303,7 +303,7 @@
          height="15.098392"
          id="rect1523-4" />
       <rect
-         style="fill:#45e644;fill-opacity:1;stroke-width:1.33850992"
+         style="fill:#03a299;fill-opacity:1;stroke-width:1.33850992;opacity:0.503"
          x="522.55786"
          y="1927.8815"
          width="209.77127"

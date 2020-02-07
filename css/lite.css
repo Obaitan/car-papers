@@ -89,6 +89,13 @@ a.link2:hover {
     opacity: .6;
 }
 
+.btn {
+    font-family: 'Arimo', sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: .5rem 1.35rem !important;
+}
+
 @media (min-width: 769px) and (max-width: 1400px) {
     .box {
         width: 50%;

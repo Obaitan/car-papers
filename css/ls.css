@@ -183,3 +183,10 @@ ul.timeline>li:before {
 h1.new {
     font-size: 4rem;
 }
+
+.btn {
+    font-family: 'Arimo', sans-serif;
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: .5rem 1.35rem !important;
+}

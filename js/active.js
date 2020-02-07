@@ -1,91 +1,68 @@
 function openNav() {
     document.getElementById("menu-toggle").style.display = "none";
     document.getElementById("nc-wrap").style.display = "flex";
-    document.getElementById("closebtn").style.display = "block";
     document.getElementById("nav-i").style.width = "300px";
 }
 
-
 function closeNav() {
-    document.getElementById("closebtn").style.display = "none";
     document.getElementById("menu-toggle").style.display = "block";
     document.getElementById("nc-wrap").style.display = "none";
     document.getElementById("nav-i").style.width = "60px";
 }
 
-
-// function myFunction(x) {
-//     if (x.matches) { // If media query matches
-//         document.body.style.backgroundColor = "yellow";
-//     } else {
-//         document.body.style.backgroundColor = "white";
-//     }
-// }
-
-// var x = window.matchMedia("(max-width: 1025px)")
-// myFunction(x) // Call listener function at run time
-// x.addListener(myFunction) // Attach listener function on state changes
-
-
-$('#showbox').click(function () {
-
-    $('#nav').show(function () {
-        document.body.addEventListener('click', navCloser, false);
-    })
+$(function () {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1750);
+                return false;
+            }
+        }
+    });
 });
 
-function navCloser(e) {
-    if (e.target.id != 'nav') {
-        document.body.removeEventListener('click', navCloser, false);
-        $('#nav').hide();
-    }
-}
 
+// // Detect request animation frame - Animate on scroll
+// var scroll = window.requestAnimationFrame ||
+//     // IE Fallback
+//     function (callback) { window.setTimeout(callback, 1000 / 60) };
+// var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
-// $(".effect-zoe figcaption").mouseover(function () {
-//     $(this).siblings("img").css({
-//         opacity: '.25',
-//         transition: '.5s'
-//     });
-// });
+// function loop() {
 
-// $(".effect-zoe figcaption").mouseover(function () {
-//     $(this).siblings("img").css({
-//         opacity: '1',
-//         transition: '.5s'
-//     });
-// });
-
-
-// $(document).ready(function () {
-//     // Add smooth scrolling to all links
-//     $('a[href*="#"]').on('click', function (event) {
-//         // Make sure this.hash has a value before overriding default behaivour
-//         if (this.hash !== "") {
-//             // Prevent default anchor click behaivour
-//             event.preventDefault();
-//             // Store hash
-//             var hash = this.hash;
-//             // Using jQuery's animate() method to add smooth page scroll
-//             $('html, body').animate({
-//                 scrollTop: $(hash).offset().top
-//             }, 800, function () {
-//                 // Add hash to URL when done scrolling (default click behaivour)
-//                 window.location.hash = hash;
-//             });
+//     Array.prototype.forEach.call(elementsToShow, function (element) {
+//         if (isElementInViewport(element)) {
+//             element.classList.add('is-visible');
+//         } else {
+//             element.classList.remove('is-visible');
 //         }
 //     });
-// });
 
-// $('a[href*="#"]').on('click', function (e) {
-//     e.preventDefault()
+//     scroll(loop);
+// }
 
-//     $('html, body').animate(
-//         {
-//             scrollTop: $($(this).attr('href')).offset().top,
-//         },
-//         1500,
-//         'linear'
-//     )
-// });
+// // Call the loop for the first time
+// loop();
 
+// // Helper function from: http://stackoverflow.com/a/7557433/274826
+// function isElementInViewport(el) {
+//     // special bonus for those using jQuery
+//     if (typeof jQuery === "function" && el instanceof jQuery) {
+//         el = el[0];
+//     }
+//     var rect = el.getBoundingClientRect();
+//     return (
+//         (rect.top <= 0
+//             && rect.bottom >= 0)
+//         ||
+//         (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
+//             rect.top <= (window.innerHeight || document.documentElement.clientHeight))
+//         ||
+//         (rect.top >= 0 &&
+//             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
+//     );
+// }
