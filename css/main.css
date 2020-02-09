@@ -32,7 +32,6 @@ body {
     flex-direction: column;
     justify-items: center;
     margin: 3rem 3.5rem;
-    z-index: 110;
 }
 
 #closebtn {
@@ -54,6 +53,7 @@ body {
     margin: 0 auto;
     cursor: pointer;
     margin-top: 0;
+    z-index: 100;
 }
 
 #toggle {
@@ -134,7 +134,7 @@ hr {
 } */
 
 .btn {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: .9rem;
     text-transform: uppercase;
     padding: .5rem 1.35rem !important;
@@ -212,7 +212,7 @@ hr {
 } */
 
 .h-text, .h-text2 {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 2.5rem;
     color: #041531;
     line-height: 1.2;
@@ -287,12 +287,11 @@ ul.b-points>li:before {
 /*About */
 
 #about {
-    background-color: #f8f8f9;
+    background-color: #fff;
     padding: 6rem 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 15px;
 }
 
 .caption-div {
@@ -325,7 +324,7 @@ hr.red-line {
 }
 
 .heading {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 2.25rem;
 }
 
@@ -338,7 +337,7 @@ hr.red-line {
 }
 
 .heading2b, .heading2c {
-    font-family: 'Questrial', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 1.65rem;
     text-transform: uppercase;
     color: #016868;
@@ -358,7 +357,7 @@ hr.red-line {
 }
 
 .heading3 {
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 1.1rem;
     color: #285657;
     font-weight: 600;
@@ -441,7 +440,6 @@ ul.timeline>li:before {
 
 #services {
     background-color: #f8f8f9;
-    margin-top: 15px;
     padding: 6rem 0 1rem 0;
 }
 
@@ -466,7 +464,7 @@ ul.timeline>li:before {
 }
 
 .s-text {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: 2.25rem;
     color: #ec6b33;
     line-height: 1.1;
@@ -505,7 +503,7 @@ ul.timeline>li:before {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 .pl-wrap {
@@ -613,7 +611,7 @@ ul.timeline>li:before {
 }
 
 .caption {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Muli', sans-serif;
     font-size: .93rem;
     font-weight: 600;
     text-transform: capitalize;
