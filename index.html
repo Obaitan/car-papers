@@ -36,7 +36,6 @@
 
 <body>
     <div class="nav-i" id="nav-i">
-        <a href="#" onclick="openNav()" id="menu-toggle"><i id="toggle"></i></a>
         <div id="nc-wrap" class="nc-wrap">
             <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><strong>×</strong></a>
             <a href="#home"><img src="svgs/particulars2.svg" id="logo" alt="Company logo"></a>
@@ -59,84 +58,78 @@
     </div>
 
     <div id="home">
-        <div class="container h-div">
+        <div class="container">
+            <span onclick="openNav()" id="menu-toggle"><i id="toggle"></i></span>
             <div class="l-wrap"><img src="svgs//particulars2.svg" class="h-logo" alt="Company logo">
             </div>
-            <div id="home-carousel" class="carousel slide carousel-fade col-xl-12" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="h-div">
-                            <div class="half col-xs-12 col-lg-6">
-                                <p class="h-text mb-4">
-                                    A digital wallet for all your vehicle particulars.
-                                </p>
-                                <div class="btn-div">
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-warning" href="start.html" role="button">Get early
-                                            access</a>
-                                    </div>
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-success" href="login.html" role="button">Sign
-                                            In</a>
-                                    </div>
-                                    <!-- <div>
+            <div class="h-div2" id="one">
+                <div class="half col-xs-12 col-lg-6">
+                    <p class="h-text mb-4 pr-5">
+                        A digital wallet for all your vehicle particulars.
+                    </p>
+                    <div class="btn-div">
+                        <div class="mr-3">
+                            <a class="btn btn-outline-warning" href="start.html" role="button">Get early
+                                access</a>
+                        </div>
+                        <div class="mr-3">
+                            <a class="btn btn-outline-success" href="login.html" role="button">Sign
+                                In</a>
+                        </div>
+                        <!-- <div>
                                          <a class="btn btn-outline-success" href="#" role="button">Download App</a>
                                         </div> -->
-                                </div>
-                            </div>
-                            <div class="h-half col-xs-12 col-lg-6">
-                                <img src="images/mobile-mockup.png" class="m-mockup" alt="Mobile App mockup">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="h-div">
-                            <div class="half col-xs-12 col-lg-6">
-                                <p class="h-text mb-4"> We take the hassle out of vehicle document renewals and new
-                                    vehicle registration.</p>
-                                <div class="btn-div">
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-warning" href="start.html" role="button">Get early
-                                            access</a>
-                                    </div>
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-success" href="login.html" role="button">Sign
-                                            In</a>
-                                    </div>
-                                    <!-- <div><a class="btn btn-outline-success" href="#" role="button">Download App</a></div> -->
-                                </div>
-                            </div>
-                            <div class="h-half col-xs-12 col-lg-6" style="text-align: center;">
-                                <img src="images/mobile-mockup.png" class="m-mockup" alt="Mobile App mockup">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="h-div">
-                            <div class="half col-xs-12 col-lg-6">
-                                <p class="h-text mb-4"> We will deliver you documents within <span class="highlight3">24
-                                        hours</span> to any location.</p>
-                                <div class="btn-div">
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-warning" href="start.html" role="button">Get early
-                                            access</a>
-                                    </div>
-                                    <div class="mr-3">
-                                        <a class="btn btn-outline-success" href="login.html" role="button">Sign
-                                            In</a>
-                                    </div>
-                                    <!-- <div><a class="btn btn-outline-success" href="#" role="button">Download App</a></div> -->
-                                </div>
-                            </div>
-                            <div class="h-half col-xs-12 col-lg-6" style="text-align: center;">
-                                <img src="images/mobile-mockup.png" class="m-mockup" alt="Mobile App mockup">
-                            </div>
-                        </div>
                     </div>
                 </div>
+                <div class="h-half col-xs-12 col-lg-6">
+                    <img src="images/mobile-mockup.png" class="digital-wallet" alt="Mobile App mockup">
+                </div>
             </div>
+
+            <!-- <div class="h-div2 y-5" id="two">
+                <div class="half col-xs-12 col-lg-5">
+                    <p class="h-text2 mb-4"> We take the hassle out of vehicle document renewals and new
+                        vehicle registration.</p>
+                    <div class="btn-div">
+                        <div class="mr-3">
+                            <a class="btn btn-outline-warning" href="start.html" role="button">Get early
+                                access</a>
+                        </div>
+                        <div class="mr-3">
+                            <a class="btn btn-outline-success" href="login.html" role="button">Sign
+                                In</a>
+                        </div>
+                        <div><a class="btn btn-outline-success" href="#" role="button">Download App</a></div>
+                    </div>
+                </div>
+                <div class="h-half col-xs-12 col-lg-7 text-lg-right">
+                    <img src="svgs/hassle-free.svg" class="hassle-free" alt="Mobile App mockup">
+                </div>
+            </div> -->
+
+            <!-- <div class="h-div2 my-5" id="three">
+                <div class="half col-xs-12 col-lg-5">
+                    <p class="h-text2 mb-4"> We will deliver your documents within<br> <span class="highlight2a">24
+                            hours</span> to any location.</p>
+                    <div class="btn-div">
+                        <div class="mr-3">
+                            <a class="btn btn-outline-warning" href="start.html" role="button">Get early
+                                access</a>
+                        </div>
+                        <div class="mr-3">
+                            <a class="btn btn-outline-success" href="login.html" role="button">Sign
+                                In</a>
+                        </div>
+                        <div><a class="btn btn-outline-success" href="#" role="button">Download App</a></div>
+                    </div>
+                </div>
+                <div class="h-half col-xs-12 col-lg-7">
+                    <img src="svgs/24hr-delivery.svg" class="prompt-delivery" alt="Mobile App mockup">
+                </div>
+            </div> -->
         </div>
     </div>
+
 
     <div id="about">
         <div class="caption-div">
@@ -177,7 +170,7 @@
                         </li>
                         <li data-aos="fade-left" data-aos-delay="2800" data-aos-duration="1000">
                             <p class="heading3">Receive</p>
-                            <p>Document(s) delivered at convenient location within 48 hours!</p>
+                            <p>Document(s) delivered at convenient location within 24 hours!</p>
                         </li>
                     </ul>
                 </div>
@@ -254,23 +247,18 @@
                 <div class="col">
                     <img src="svgs/wema.svg" class="p-logo" alt="Wema Bank logo">
                 </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="750" class="pl-wrap">
                 <div class="col">
                     <img src="images/frsc.png" class="p-logo" alt="FRSC logo">
                 </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="750" class="pl-wrap">
                 <div class="col">
                     <img src="svgs/mansard.svg" class="p-logo2" alt="Mansard logo">
                 </div>
                 <div class="col">
                     <img src="svgs/vis.svg" class="p-logo4" alt="VIS logo">
                 </div>
-                <div class="col">
-                    <img src="svgs/lastma.svg" class="p-logo5" alt="LASTMA logo">
-                </div>
-                <div class="col">
-                    <img src="svgs/tandequip.svg" class="p-logo" alt="LASTMA logo">
-                </div>
+
             </div>
         </div>
     </div>
@@ -297,7 +285,7 @@
 
     <div id="contact">
         <div class="container">
-            <div class="h-div2">
+            <div class="h-div2a">
                 <div class="c-1 col-xs-12 col-lg-8">
                     <div class="caption-div mb-2">
                         <p class="heading2c">Send Us A Message</p>

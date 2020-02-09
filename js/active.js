@@ -1,13 +1,19 @@
+// function openNav() {
+//     document.getElementById("menu-toggle").style.display = "none";
+//     document.getElementById("nav-i").style.width = "300px";
+// }
+
+// function closeNav() {
+//     document.getElementById("menu-toggle").style.display = "block";
+//     document.getElementById("nav-i").style.width = "60px";
+// }
+
 function openNav() {
-    document.getElementById("menu-toggle").style.display = "none";
-    document.getElementById("nc-wrap").style.display = "flex";
     document.getElementById("nav-i").style.width = "300px";
 }
 
 function closeNav() {
-    document.getElementById("menu-toggle").style.display = "block";
-    document.getElementById("nc-wrap").style.display = "none";
-    document.getElementById("nav-i").style.width = "60px";
+    document.getElementById("nav-i").style.width = "0px";
 }
 
 $(function () {
@@ -26,3 +32,14 @@ $(function () {
 });
 
 
+// // fade in script
+// $(document).ready(function () {
+//     $(".sub-group").fadeOut(6000).fadeIn(6000);
+// });
+
+
+// $('#two, #one').hide();
+// $('.slide').click(function () {
+//     var $this = $(this);
+//     $this.fadeOut(function () { $this.next().fadeIn(); });
+// });

@@ -139,7 +139,7 @@
          style="fill:#ffffff" />
     </clipPath>
     <linearGradient
-       xlink:href="#a91ba363-77be-43f7-9cf6-91c4a3880d9c"
+       xlink:href="#a5c94603-d688-4cb8-935e-8753937e09f1"
        gradientTransform="rotate(90,665.375,476.845)"
        y2="163.25999"
        x2="688.76001"
@@ -467,9 +467,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.47239947"
-     inkscape:cx="661.51404"
-     inkscape:cy="335.55361"
+     inkscape:zoom="0.33403687"
+     inkscape:cx="387.18148"
+     inkscape:cy="123.60795"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -486,7 +486,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -694,7 +694,7 @@
            style="opacity:0.5"
            id="g4258">
           <rect
-             style="fill:url(#598f8edf-c762-4b18-b52d-250fc678075a)"
+             style="fill:#fdd835;fill-opacity:1;opacity:1"
              x="376.35999"
              y="276.01001"
              width="602.59998"
