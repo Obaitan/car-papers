@@ -1,13 +1,4 @@
-// function openNav() {
-//     document.getElementById("menu-toggle").style.display = "none";
-//     document.getElementById("nav-i").style.width = "300px";
-// }
-
-// function closeNav() {
-//     document.getElementById("menu-toggle").style.display = "block";
-//     document.getElementById("nav-i").style.width = "60px";
-// }
-
+// To open and close sidebar
 function openNav() {
     document.getElementById("nav-i").style.width = "300px";
 }
@@ -16,6 +7,12 @@ function closeNav() {
     document.getElementById("nav-i").style.width = "0px";
 }
 
+$('body,html').click(function (e) {
+    $('nav-i').css('width', '0px');
+});
+
+
+// for smooth scrolling to page sections
 $(function () {
     $('a[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -32,14 +29,18 @@ $(function () {
 });
 
 
-// // fade in script
-// $(document).ready(function () {
-//     $(".sub-group").fadeOut(6000).fadeIn(6000);
-// });
+// To create fade in/fade out elements
+$(document).ready(function () {
+    loopbox();
+    function loopbox() {
+        $('#one').fadeIn(750).delay(4000).fadeOut(750, function () {
+            $('#two').fadeIn(750).delay(4000).fadeOut(750, function () {
+                $('#three').fadeIn(750).delay(4000).fadeOut(750, function () {
+                    loopbox();
+                });
+            });
+        });
+    }
+});
 
-
-// $('#two, #one').hide();
-// $('.slide').click(function () {
-//     var $this = $(this);
-//     $this.fadeOut(function () { $this.next().fadeIn(); });
-// });
+// $('#one').hide(speed, callback);

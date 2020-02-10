@@ -4,8 +4,7 @@ body {
 }
 
 .nav-i {
-    display: block;
-    background-color: #bcbcd1;
+    background-color: #ecf3f3;
     height: 100vh;
     width: 0;
     position: fixed;
@@ -178,7 +177,11 @@ hr {
     z-index: -1;
 }
 
-.h-div, .h-div2 {
+#one, #two, #three {
+    display: none;
+}
+
+.h-div {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -187,7 +190,19 @@ hr {
 }
 
 .h-div2 {
-    /* top: 8rem; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    top: 3rem;
+}
+
+.h-div3 {
+    top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
 }
 
 .half {
@@ -201,7 +216,7 @@ hr {
 .h-logo {
     position: absolute;
     top: 40px;
-    left: 150px;
+    margin-left: 1rem;
     width: 180px;
 }
 
@@ -555,7 +570,7 @@ ul.timeline>li:before {
 /* contact */
 
 #contact {
-    padding: 7rem 0;
+    padding: 6rem 0;
 }
 
 .h-div2a {
@@ -621,7 +636,7 @@ ul.timeline>li:before {
 
 .text {
     font-family: 'Heebo', sans-serif;
-    font-size: .92rem;
+    font-size: .95rem;
     color: #4e4d4d;
 }
 
@@ -803,12 +818,27 @@ a.l-info:hover {
         display: none;
     }
     #home {
-        height: fit-content;
-        /* min-height: 150px; */
+        height: 680px;
+    }
+    .heading {
+        font-size: 2rem;
+    }
+    .icon-link {
+        margin: 1rem 1.2rem;
+    }
+    .ring {
+        height: 4rem;
+        width: 4rem;
+    }
+    .h-div2 {
+        top: 3rem;
+    }
+    .h-div3 {
+        top: 7rem;
     }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     form {
         width: 80%;
     }
@@ -817,5 +847,41 @@ a.l-info:hover {
     }
     .login-backdrop {
         height: fit-content;
+    }
+    .heading {
+        font-size: 2.1rem;
+    }
+    .caption-div {
+        margin-bottom: 4rem;
+    }
+    .service-image {
+        width: 65%;
+    }
+    .service-image2 {
+        width: 60%;
+    }
+    .s-text {
+        font-size: 2.4rem;
+    }
+    #app {
+        padding-top: 5rem;
+    }
+    .caption, .text {
+        font-size: 1rem;
+    }
+    #home {
+        height: 110vh;
+    }
+    .h-div3 {
+        top: 8rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav-i {
+        height: 100%;
+    }
+    #logo {
+        width: 75%;
     }
 }
