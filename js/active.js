@@ -7,9 +7,24 @@ function closeNav() {
     document.getElementById("nav-i").style.width = "0px";
 }
 
-$('body,html').click(function (e) {
-    $('nav-i').css('width', '0px');
-});
+
+// (function () {
+//     // get sidebar element
+// var sidebar = document.getElementById('nav-i');
+
+//     function closeNav() {
+//         sidebar.style.width = "0px";
+//     }
+
+//     // get all `a` tags inside sidebar
+// var aTags = sidebar.getElementsByTagName('a');
+
+//     // for each tag
+// aTags.forEach(function (a) {
+//         // add click event listener to execute closeNav on `click`
+// a.addEventListener('click', closeNav);
+// });
+// })();
 
 
 // for smooth scrolling to page sections

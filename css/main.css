@@ -216,15 +216,9 @@ hr {
 .h-logo {
     position: absolute;
     top: 40px;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     width: 180px;
 }
-
-/* 
-.l-wrap {
-    position: relative;
-    bottom: 8rem;
-} */
 
 .h-text, .h-text2 {
     font-family: 'Muli', sans-serif;
@@ -563,7 +557,8 @@ ul.timeline>li:before {
 
 .gen-text {
     font-family: 'Questrial', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 1.2;
     color: #1b212c;
 }
 
@@ -655,11 +650,19 @@ ul.timeline>li:before {
     width: fit-content;
 }
 
-.info {
+.info, .info2, .info3 {
     font-family: 'Arimo', sans-serif;
     font-size: .92rem;
     color: white;
     margin: 0;
+}
+
+.info2, .info3 {
+    color: #041531;
+}
+
+.info3 {
+    font-size: .85rem;
 }
 
 a.low-link {
@@ -718,6 +721,11 @@ a.low-link:hover {
     padding: 3rem 0;
 }
 
+.bottom-details {
+    text-align: center;
+}
+
+/* 
 .btn-grad {
     background-image: linear-gradient(to right, #e52d27 0%, #b31217 51%, #e52d27 100%)
 }
@@ -730,20 +738,20 @@ a.low-link:hover {
 
 .btn-success:hover {
     background-position: right center;
-}
+} */
 
 .other-half {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #44e644d7;
+    background-color: #ecf3f3;
     padding: 3rem 10rem;
     text-align: center;
 }
 
 form {
-    width: 50%;
+    width: 60%;
 }
 
 .form-control {
@@ -758,9 +766,13 @@ form {
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
 .l-ht {
     font-family: 'Arimo', sans-serif;
-    color: #27a444;
+    color: #041531;
     font-size: 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -776,18 +788,18 @@ form {
 a.l-info {
     font-weight: 600;
     text-decoration: none;
-    color: #95b903;
+    color: #016868;
 }
 
 a.l-info:hover {
     opacity: .6;
 }
 
-.white {
+.info4 {
     font-family: 'Questrial', sans-serif;
-    color: white;
-    font-size: 1.35rem;
-    line-height: 1.3;
+    color: #041531;
+    font-size: 1.55rem;
+    line-height: 1.2;
 }
 
 .ll-wrap {
@@ -795,7 +807,7 @@ a.l-info:hover {
 }
 
 #l-logo {
-    width: 65%;
+    width: 85%;
 }
 
 /* start */
@@ -804,7 +816,7 @@ a.l-info:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #44e644d7;
+    background-color: #ecf3f3;
     padding: 3rem 10rem;
     text-align: center;
 }
