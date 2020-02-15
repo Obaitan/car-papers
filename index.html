@@ -21,8 +21,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
-    <!-- main css -->
-    <link rel="stylesheet" href="css/main.css">
+
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arimo|Heebo|Questrial|Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
@@ -31,265 +30,277 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <span onclick="openNav()" id="menu-toggle"><i id="toggle"></i></span>
-    <div class="nav-i" id="nav-i">
-        <div id="nc-wrap" class="nc-wrap">
-            <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><strong>×</strong></a>
-            <a href="#home"><img src="svgs/particulars2.svg" id="logo" alt="Company logo"></a>
-            <ul>
-                <li><a href="start.html" id="link1">Get Started</a></li>
-                <hr>
-                <li><a href="user/index.html" id="link1">User Section</a></li>
-                <hr>
-                <li><a href="#about" id="link1">About</a></li>
-                <hr>
-                <li><a href="#services" id="link1">Services</a></li>
-                <hr>
-                <li><a href="#app" id="link1">App</a></li>
-                <hr>
-                <li><a href="#contact" id="link1">Contact</a></li>
-                <hr>
-                <li><a href="login.html" id="link1">Sign in</a></li>
-            </ul>
+    <div id="sidebar">
+        <span onclick="openNav()" id="menu-toggle"><i id="toggle"></i></span>
+        <div class="nav" id="nav">
+            <div id="nc-wrap" class="nc-wrap">
+                <a href="javascript:void(0)" id="closebtn" onclick="closeNav()"><strong>×</strong></a>
+                <img src="svgs/particulars2.svg" id="logo" alt="Company logo">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <hr>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <hr>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <hr>
+                    <li><a href="#app" class="nav-link">App</a></li>
+                    <hr>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <hr>
+                    <li><a href="start.html" class="nav-link">Get Started</a></li>
+                    <hr>
+                    <li><a href="login.html" class="nav-link">Sign in</a></li>
+                    <hr>
+                    <li><a href="user/index.html" class="nav-link">User Section</a></li>
+                </ul>
+            </div>
         </div>
     </div>
+    </div>
+    <div id="page-wrap">
+        <div id="home">
+            <div class="container">
+                <div class="l-wrap"><img src="svgs//particulars2.svg" class="h-logo" alt="Company logo">
+                </div>
+                <div id="one">
+                    <div class="h-div2">
+                        <div class="half px-md-5 px-xl-0 col-xs-12 col-lg-6">
+                            <p class="h-text mb-3">
+                                A digital wallet for all your vehicle particulars.
+                            </p>
+                            <div class="btn-div text-sm-center text-lg-left">
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-main" href="start.html" role="button">Get early
+                                        access</a>
+                                </div>
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-support" href="login.html" role="button">Sign
+                                        In</a>
+                                </div>
+                                <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
+                            </div>
+                        </div>
+                        <div class="h-half my-4 mb-lg-0 mt-lg-0 col-xs-12 col-lg-6 order-first order-lg-last">
+                            <img src="images/mobile-mockup.png" class="digital-wallet" alt="Mobile App mockup">
+                        </div>
+                    </div>
+                </div>
 
-    <div id="home">
-        <div class="container">
-            <div class="l-wrap"><img src="svgs//particulars2.svg" class="h-logo" alt="Company logo">
+                <div id="two">
+                    <div class="h-div3 y-5">
+                        <div class="half px-xl-0 col-xs-12 col-lg-5">
+                            <p class="h-text2 mb-3"> We take the hassle out of vehicle document renewals and new
+                                vehicle registration.</p>
+                            <div class="btn-div">
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-main" href="start.html" role="button">Get early
+                                        access</a>
+                                </div>
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-support" href="login.html" role="button">Sign
+                                        In</a>
+                                </div>
+                                <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
+                            </div>
+                        </div>
+                        <div
+                            class="h-half my-4 mb-lg-0 mt-lg-0 col-xs-12 col-lg-7 text-lg-right  order-first order-lg-last">
+                            <img src="svgs/hassle-free.svg" class="hassle-free" alt="Mobile App mockup">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="three">
+                    <div class="h-div3 my-5">
+                        <div class="half px-xl-0 col-xs-12 col-lg-5">
+                            <p class="h-text2 mb-3"> We will deliver your documents within<br> <span
+                                    class="highlight2a">24
+                                    hours</span> to any location.</p>
+                            <div class="btn-div">
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-main" href="start.html" role="button">Get early
+                                        access</a>
+                                </div>
+                                <div class="mr-sm-3">
+                                    <a class="btn btn-support" href="login.html" role="button">Sign
+                                        In</a>
+                                </div>
+                                <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
+                            </div>
+                        </div>
+                        <div class="h-half my-4 mb-lg-0 mt-lg-0 col-xs-12 col-lg-7  order-first order-lg-last">
+                            <img src="svgs/24hr-delivery.svg" class="prompt-delivery" alt="Mobile App mockup">
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="one">
-                <div class="h-div2">
-                    <div class="half px-md-5 px-xl-0 col-xs-12 col-lg-6">
-                        <p class="h-text mb-4">
-                            A digital wallet for all your vehicle particulars.
+        </div>
+
+
+        <div id="about">
+            <div class="caption-div">
+                <p class="heading2b">How it works</p>
+                <hr class="red-line" style="width: 135px;">
+            </div>
+            <div class="container display">
+                <div class="bold col-xs-12 col-lg-8">
+                    <div data-aos="fade-up" class="mi">
+                        <img src="svgs/doc-folder.svg" class="main-image" alt="">
+                    </div>
+                    <div class="mt-2">
+                        <p data-aos="zoom-in" class="heading mb-0">Get Vehicle Documents With Ease</p>
+                        <p data-aos="zoom-in" class="heading2 my-0" style="position: relative; bottom: .4rem;"><span
+                                class="highlight3">Documents Delivered within <a href="#" class="terms" download>24
+                                    hours!</a></span>
                         </p>
-                        <div class="btn-div text-sm-center text-lg-left">
-                            <div class="mr-3">
-                                <a class="btn btn-primary" href="start.html" role="button">Get early
-                                    access</a>
-                            </div>
-                            <div class="mr-3">
-                                <a class="btn btn-success" href="login.html" role="button">Sign
-                                    In</a>
-                            </div>
-                            <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
+                        <div data-aos="zoom-in" class="mt-sm-3">
+                            <a class="btn btn-main" href="start.html" role="button">Get early access</a>
                         </div>
                     </div>
-                    <div class="h-half mt-md-5 mt-lg-0 col-xs-12 col-lg-6">
-                        <img src="images/mobile-mockup.png" class="digital-wallet" alt="Mobile App mockup">
-                    </div>
                 </div>
-            </div>
-
-            <div id="two">
-                <div class="h-div3 y-5">
-                    <div class="half px-xl-0 col-xs-12 col-lg-5">
-                        <p class="h-text2 mb-4"> We take the hassle out of vehicle document renewals and new
-                            vehicle registration.</p>
-                        <div class="btn-div">
-                            <div class="mr-3">
-                                <a class="btn btn-primary" href="start.html" role="button">Get early
-                                    access</a>
-                            </div>
-                            <div class="mr-3">
-                                <a class="btn btn-success" href="login.html" role="button">Sign
-                                    In</a>
-                            </div>
-                            <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
-                        </div>
-                    </div>
-                    <div class="h-half col-xs-12 col-lg-7 text-lg-right">
-                        <img src="svgs/hassle-free.svg" class="hassle-free" alt="Mobile App mockup">
-                    </div>
-                </div>
-            </div>
-
-            <div id="three">
-                <div class="h-div3 my-5">
-                    <div class="half px-xl-0 col-xs-12 col-lg-5">
-                        <p class="h-text2 mb-4"> We will deliver your documents within<br> <span class="highlight2a">24
-                                hours</span> to any location.</p>
-                        <div class="btn-div">
-                            <div class="mr-3">
-                                <a class="btn btn-primary" href="start.html" role="button">Get early
-                                    access</a>
-                            </div>
-                            <div class="mr-3">
-                                <a class="btn btn-success" href="login.html" role="button">Sign
-                                    In</a>
-                            </div>
-                            <!-- <div><a class="btn btn-warning" href="#" role="button">Download App</a></div> -->
-                        </div>
-                    </div>
-                    <div class="h-half col-xs-12 col-lg-7">
-                        <img src="svgs/24hr-delivery.svg" class="prompt-delivery" alt="Mobile App mockup">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div id="about">
-        <div class="caption-div">
-            <p class="heading2b">How it works</p>
-            <hr class="red-line" style="width: 135px;">
-        </div>
-        <div class="container display">
-            <div class="bold col-xs-12 col-lg-8">
-                <div data-aos="fade-up" class="mi">
-                    <img src="svgs/doc-folder.svg" class="main-image" alt="">
-                </div>
-                <div class="mt-2">
-                    <p data-aos="zoom-in" class="heading mb-0">Get Vehicle Documents With Ease</p>
-                    <p data-aos="zoom-in" class="heading2 my-0" style="position: relative; bottom: .4rem;"><span
-                            class="highlight3">Documents Delivered within <a href="#" class="terms" download>24
-                                hours!</a></span>
-                    </p>
-                    <div data-aos="zoom-in" class="mt-3">
-                        <a class="btn btn-primary" href="start.html" role="button">Get early access</a>
-                    </div>
-                </div>
-            </div>
-            <div class="steps col-xs-12 col-lg-4">
-                <div>
-                    <p data-aos="zoom-in" class="heading2 ">Steps</p>
-                    <ul class="timeline">
-                        <li data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
-                            <p class="heading3">Register</p>
-                            <p class="text">Fill in profile information on web or mobile platform.</p>
-                        </li>
-                        <li data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1000">
-                            <p class="heading3">Request</p>
-                            <p class="text">Make request and provide necessary information.</p>
-                        </li>
-                        <li data-aos="fade-left" data-aos-delay="1900" data-aos-duration="1000">
-                            <p class="heading3">Pay</p>
-                            <p class="text">Pay online for document and delivery.</p>
-                        </li>
-                        <li data-aos="fade-left" data-aos-delay="2800" data-aos-duration="1000">
-                            <p class="heading3">Receive</p>
-                            <p class="text">Document(s) delivered at convenient location within 24 hours!</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="services">
-        <div class="caption-div">
-            <p class="heading2b">Our Services</p>
-            <hr class="red-line" style="width: 135px;">
-        </div>
-        <div class="container mt-5">
-            <div class="s-wrap">
-                <div data-aos="fade-up" class="serv-half col-xs-12 col-lg-6 text-lg-left mt-sm-4 mt-lg-0">
-                    <p class="s-text mb-3">Vehicle License Registration And Renewal</p>
-                    <p class="heading-s2">Renew your vehicle license and/or register new
-                        vehicles.</p>
-                </div>
-                <div data-aos="fade-left" data-aos-delay="500"
-                    class="h-half col-xs-12 col-lg-5 order-first order-lg-last">
-                    <img src="svgs/main-show3.svg" class="service-image" alt="Mobile App mockup">
-                </div>
-            </div>
-
-            <div class="s-wrap">
-                <div data-aos="fade-right" data-aos-delay="500" class="h-half col-xs-12 col-lg-5">
-                    <img src="svgs/insurance.svg" class="service-image" alt="Mobile App mockup">
-                </div>
-                <div data-aos="fade-up" class="serv-half col-xs-12 col-lg-6 ml-lg-auto mt-sm-4 mt-lg-0">
-                    <p class="s-text mb-3">Auto Insurance</p>
-                    <p class="heading-s2">Third Party or Comprehensive - we partner with
-                        the best to get
-                        you covered.</p>
-                </div>
-            </div>
-
-            <div class="s-wrap">
-                <div data-aos="fade-up" class="serv-half col-xs-12 col-lg-6 mt-sm-4 mt-lg-0">
-                    <p class="s-text mb-3">Roadworthiness Certificate</p>
-                    <p class="heading-s2">Ensure your vehicle is certified to avoid VIO
-                        wahala.</p>
-                </div>
-                <div data-aos="fade-left" data-aos-delay="500"
-                    class="h-half col-xs-12 col-lg-5 order-first order-lg-last">
-                    <img src="svgs/road-worthiness.svg" class="service-image" alt="Mobile App mockup">
-                </div>
-            </div>
-
-            <div class="s-wrap">
-                <div data-aos="fade-right" data-aos-delay="500" class="h-half col-xs-12 col-lg-5">
-                    <img src="svgs/ecowas-card.svg" class="service-image2" alt="Mobile App mockup">
-                </div>
-                <div data-aos="fade-up" class="serv-half col-xs-12 col-lg-6 ml-lg-auto mt-sm-4 mt-lg-0">
-                    <p class="s-text mb-3">ECOWAS Brown Card</p>
-                    <p class="heading-s2">Travel the West African sub-region in your car
-                        without hassles.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="partners">
-        <div class="blue col-xs-12 col-lg-4">
-            <p class="heading2a">OUR PARTNERS</p>
-        </div>
-        <div class="partners-wrap col-xs-12 col-lg-8">
-            <div data-aos="fade-up" class="pl-wrap">
-                <div class="col">
-                    <img src="svgs/leadway.svg" class="p-logo" alt="Leadway Assurance logo">
-                </div>
-                <div class="col">
-                    <img src="svgs/oldmutual.svg" class="p-logo3" alt="Old Mutual Insurance logo">
-                </div>
-                <div class="col">
-                    <img src="svgs/wema.svg" class="p-logo" alt="Wema Bank logo">
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="750" class="pl-wrap">
-                <div class="col">
-                    <img src="images/frsc.png" class="p-logo" alt="FRSC logo">
-                </div>
-                <div class="col">
-                    <img src="svgs/mansard.svg" class="p-logo2" alt="Mansard logo">
-                </div>
-                <div class="col">
-                    <img src="svgs/vis.svg" class="p-logo4" alt="VIS logo">
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div id="app">
-        <div class="container h-div">
-            <div class="half col-xs-12 col-lg-6">
-                <p class="heading highlight" style="font-size: 2.75rem; font-weight: 600;">Get Mobile App</p>
-                <p class="gen-text">Your vehicle particulars on your phone.
-                    We would let you know when we launch.</p>
-                <div class="btn-div">
+                <div class="steps col-xs-12 col-lg-4">
                     <div>
-                        <a class="btn btn-primary" href="start.html" role="button">Get Early Access</a>
+                        <p data-aos="zoom-in" class="heading2 ">Steps</p>
+                        <ul class="timeline">
+                            <li data-aos="fade-left" data-aos-delay="500" data-aos-duration="1000">
+                                <p class="heading3">Register</p>
+                                <p class="text">Fill in profile information on web or mobile platform.</p>
+                            </li>
+                            <li data-aos="fade-left" data-aos-delay="1200" data-aos-duration="1000">
+                                <p class="heading3">Request</p>
+                                <p class="text">Make request and provide necessary information.</p>
+                            </li>
+                            <li data-aos="fade-left" data-aos-delay="1900" data-aos-duration="1000">
+                                <p class="heading3">Pay</p>
+                                <p class="text">Pay online for document and delivery.</p>
+                            </li>
+                            <li data-aos="fade-left" data-aos-delay="2800" data-aos-duration="1000">
+                                <p class="heading3">Receive</p>
+                                <p class="text">Document(s) delivered at convenient location within 24 hours!</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div data-aos="zoom-in" class="h-half col-xs-12 col-lg-6">
-                <img src="images/mobile-mockup.png" class="m-mockup2" alt="Mobile App mockup">
+        </div>
+
+        <div id="services">
+            <div class="caption-div">
+                <p class="heading2b">Our Services</p>
+                <hr class="red-line" style="width: 135px;">
+            </div>
+            <div class="container mt-5">
+                <div class="s-wrap">
+                    <div data-aos="fade-up"
+                        class="serv-half col-xs-12 col-lg-6 text-center text-lg-left mt-sm-4 mt-lg-0">
+                        <p class="s-text mb-2 mb-sm-3">Vehicle License Registration And Renewal</p>
+                        <p class="heading-s2">Renew your vehicle license and/or register new
+                            vehicles.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="500"
+                        class="h-half col-xs-12 col-lg-5 order-first order-lg-last">
+                        <img src="svgs/main-show3.svg" class="service-image" alt="Mobile App mockup">
+                    </div>
+                </div>
+
+                <div class="s-wrap">
+                    <div data-aos="fade-right" data-aos-delay="500" class="h-half col-xs-12 col-lg-5">
+                        <img src="svgs/insurance.svg" class="service-image" alt="Mobile App mockup">
+                    </div>
+                    <div data-aos="fade-up"
+                        class="serv-half col-xs-12 col-lg-6 ml-lg-auto mt-sm-4 mt-lg-0 text-center text-lg-left">
+                        <p class="s-text mb-2 mb-sm-3">Auto Insurance</p>
+                        <p class="heading-s2">Third Party or Comprehensive - we partner with
+                            the best to get
+                            you covered.</p>
+                    </div>
+                </div>
+
+                <div class="s-wrap">
+                    <div data-aos="fade-up"
+                        class="serv-half col-xs-12 col-lg-6 mt-sm-4 mt-lg-0 text-center text-lg-left">
+                        <p class="s-text mb-2 mb-sm-3">Roadworthiness Certificate</p>
+                        <p class="heading-s2">Ensure your vehicle is certified to avoid VIO
+                            wahala.</p>
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="500"
+                        class="h-half col-xs-12 col-lg-5 order-first order-lg-last">
+                        <img src="svgs/road-worthiness.svg" class="service-image" alt="Mobile App mockup">
+                    </div>
+                </div>
+
+                <div class="s-wrap">
+                    <div data-aos="fade-right" data-aos-delay="500" class="h-half col-xs-12 col-lg-5">
+                        <img src="svgs/ecowas-card.svg" class="service-image2" alt="Mobile App mockup">
+                    </div>
+                    <div data-aos="fade-up"
+                        class="serv-half col-xs-12 col-lg-6 ml-lg-auto mt-sm-4 mt-lg-0 text-center text-lg-left">
+                        <p class="s-text mb-2 mb-sm-3">ECOWAS Brown Card</p>
+                        <p class="heading-s2">Travel the West African sub-region in your car
+                            without hassles.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="contact">
-        <div class="container">
-            <div class="h-div2a">
-                <div class="c-1 col-xs-12 col-lg-8">
+        <div class="partners">
+            <div class="bluish col-xs-12 col-lg-4">
+                <p class="heading2a">OUR PARTNERS</p>
+            </div>
+            <div class="partners-wrap col-xs-12 col-lg-8">
+                <div data-aos="fade-up" class="pl-wrap">
+                    <div class="col">
+                        <img src="svgs/leadway.svg" class="p-logo" alt="Leadway Assurance logo">
+                    </div>
+                    <div class="col">
+                        <img src="svgs/oldmutual.svg" class="p-logo3" alt="Old Mutual Insurance logo">
+                    </div>
+                    <div class="col">
+                        <img src="svgs/mansard.svg" class="p-logo2" alt="Mansard logo">
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="750" class="pl-wrap">
+                    <div class="col">
+                        <img src="svgs/wema.svg" class="p-logo" alt="Wema Bank logo">
+                    </div>
+
+                    <div class="col">
+                        <img src="svgs/vis.svg" class="p-logo4" alt="VIS logo">
+                    </div>
+                    <div class="col">
+                        <img src="images/frsc.png" class="p-logo" alt="FRSC logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="app">
+            <div class="container h-div">
+                <div class="half mt-3 mt-lg-0 col-xs-12 col-lg-6">
+                    <p class="app-heading">Get Mobile App</p>
+                    <p class="gen-text">Your vehicle particulars on your phone.
+                        We would let you know when we launch.</p>
+                    <div class="btn-div">
+                        <div>
+                            <a class="btn btn-main" href="start.html" role="button">Get Early Access</a>
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="zoom-in" class="h-half col-xs-12 col-lg-6  order-first order-lg-last">
+                    <img src="images/mobile-mockup.png" class="m-mockup2" alt="Mobile App mockup">
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="container h-div2a">
+                <div class="col-xs-12 col-lg-8">
                     <div class="caption-div mb-2">
                         <p class="heading2c">Send Us A Message</p>
                         <hr class="red-line">
@@ -303,13 +314,13 @@
                             <div class="ring"><i class="fab fa-twitter"></i></div>
                             <p class="my-1">Twitter</p>
                         </a>
-                        <a href="https://linkedin.com/in/particularsng" class="icon-link" target="_blank">
-                            <div class="ring"><i class="fab fa-linkedin-in"></i></div>
-                            <p class="my-1">LinkedIn</p>
-                        </a>
                         <a href=" https://www.facebook.com/particulars.ng.18" class="icon-link" target="_blank">
                             <div class="ring"><i class="fab fa-facebook-f"></i></div>
                             <p class="my-1">Facebook</p>
+                        </a>
+                        <a href="https://linkedin.com/in/particularsng" class="icon-link" target="_blank">
+                            <div class="ring"><i class="fab fa-linkedin-in"></i></div>
+                            <p class="my-1">LinkedIn</p>
                         </a>
                         <a href="" class="icon-link" target="_blank">
                             <div class="ring"><i class="fab fa-instagram"></i></div>
@@ -322,7 +333,7 @@
                     </div>
                 </div>
                 <div
-                    class="address col-xs-12 col-lg-4 px-3 justify-content-sm-start justify-content-lg-end mt-sm-3 mt-lg-0">
+                    class="address col-xs-12 col-lg-4 px-3 justify-content-start justify-content-lg-end mt-sm-3 mt-lg-0">
                     <div>
                         <!-- <div class="media">
                                 <i class="material-icons">place</i>
@@ -356,7 +367,7 @@
     </div>
 
     <div class="footer">
-        <div class="sub-group">
+        <div class="sub-group mb-2 mb-sm-0">
             <p class="info">particulars.ng</p>
             <p class="info mx-2"> | </p>
             <p class="info mr-5">&copy;
@@ -364,10 +375,11 @@
             </p>
         </div>
         <div class="sub-group">
-            <p class="info"><a class="low-link" type="button" data-toggle="modal" data-target="#terms">Terms &
+            <p class="footer-info"><a class="low-link" type="button" data-toggle="modal" data-target="#terms">Terms
+                    &
                     Conditions</a></p>
             <p class="info mx-2"> | </p>
-            <p class="info"><a class="low-link" type="button" data-toggle="modal" data-target="#privacy">Privacy
+            <p class="footer-info"><a class="low-link" type="button" data-toggle="modal" data-target="#privacy">Privacy
                     Policy</a></p>
         </div>
 
@@ -385,63 +397,78 @@
                     </div>
                     <div class="modal-body">
                         <p class="text mx-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore et dolore magna
                             aliqua. Netus et malesuada fames ac turpis egestas. Dui id ornare arcu odio ut sem nulla
                             pharetra diam. Arcu odio ut sem
-                            nulla pharetra. Penatibus et magnis dis parturient montes nascetur. Commodo viverra maecenas
+                            nulla pharetra. Penatibus et magnis dis parturient montes nascetur. Commodo viverra
+                            maecenas
                             accumsan lacus vel.
-                            Habitasse platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas volutpat blandit
+                            Habitasse platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas volutpat
+                            blandit
                             aliquam. Quisque sagittis
                             purus sit amet volutpat consequat mauris nunc congue. Amet aliquam id diam maecenas
                             ultricies mi eget mauris pharetra.
                             Ante metus dictum at tempor commodo ullamcorper a. Est ullamcorper eget nulla
                             facilisi.<br><br>
 
-                            Condimentum vitae sapien pellentesque habitant morbi. Est sit amet facilisis magna etiam.
+                            Condimentum vitae sapien pellentesque habitant morbi. Est sit amet facilisis magna
+                            etiam.
                             Enim blandit volutpat maecenas
                             volutpat blandit aliquam. Purus sit amet volutpat consequat mauris nunc congue nisi.
                             Facilisi morbi tempus iaculis urna
                             id volutpat. Egestas congue quisque egestas diam in arcu cursus. Sed egestas egestas
                             fringilla phasellus faucibus.
-                            Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Sit amet nisl
+                            Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Sit amet
+                            nisl
                             suscipit adipiscing bibendum
                             est ultricies. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Pulvinar
                             pellentesque habitant morbi
-                            tristique senectus et netus. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices
+                            tristique senectus et netus. Rhoncus mattis rhoncus urna neque viverra justo nec
+                            ultrices
                             dui. Neque convallis a cras
                             semper auctor neque vitae tempus. Pulvinar elementum integer enim neque volutpat ac
                             tincidunt vitae semper. Imperdiet
                             sed euismod nisi porta lorem mollis aliquam ut porttitor. Ut faucibus pulvinar elementum
                             integer enim neque volutpat ac
-                            tincidunt. Volutpat est velit egestas dui. At ultrices mi tempus imperdiet nulla malesuada
+                            tincidunt. Volutpat est velit egestas dui. At ultrices mi tempus imperdiet nulla
+                            malesuada
                             pellentesque elit eget.<br><br>
 
                             Nam aliquam sem et tortor consequat id porta nibh venenatis. Adipiscing elit ut aliquam
                             purus sit. Et ligula ullamcorper
-                            malesuada proin libero nunc consequat interdum. At augue eget arcu dictum varius. Arcu odio
+                            malesuada proin libero nunc consequat interdum. At augue eget arcu dictum varius. Arcu
+                            odio
                             ut sem nulla pharetra diam
-                            sit amet nisl. Sed viverra ipsum nunc aliquet bibendum enim. Quam quisque id diam vel quam
+                            sit amet nisl. Sed viverra ipsum nunc aliquet bibendum enim. Quam quisque id diam vel
+                            quam
                             elementum pulvinar etiam non.
-                            Dictum sit amet justo donec enim diam vulputate ut pharetra. Ut porttitor leo a diam. Nam
+                            Dictum sit amet justo donec enim diam vulputate ut pharetra. Ut porttitor leo a diam.
+                            Nam
                             aliquam sem et tortor
-                            consequat id. Nunc non blandit massa enim. Nullam eget felis eget nunc lobortis mattis. Amet
+                            consequat id. Nunc non blandit massa enim. Nullam eget felis eget nunc lobortis mattis.
+                            Amet
                             facilisis magna etiam
-                            tempor orci. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Iaculis urna id
+                            tempor orci. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Iaculis urna
+                            id
                             volutpat lacus laoreet non
                             curabitur gravida.<br><br>
 
                             Mauris a diam maecenas sed enim ut sem viverra. Dui faucibus in ornare quam viverra orci
                             sagittis. Lacus vel facilisis
-                            volutpat est velit egestas dui. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.
+                            volutpat est velit egestas dui. Viverra ipsum nunc aliquet bibendum enim facilisis
+                            gravida.
                             Scelerisque eu ultrices
                             vitae auctor eu. Sed vulputate odio ut enim blandit. Et malesuada fames ac turpis.
                             Ullamcorper a lacus vestibulum sed.
-                            Aliquam faucibus purus in massa tempor nec. Purus viverra accumsan in nisl nisi scelerisque.
+                            Aliquam faucibus purus in massa tempor nec. Purus viverra accumsan in nisl nisi
+                            scelerisque.
                             Aliquet bibendum enim
                             facilisis gravida neque. Consequat interdum varius sit amet mattis vulputate enim.
                             Consectetur adipiscing elit
-                            pellentesque habitant morbi tristique senectus et. Nulla facilisi etiam dignissim diam quis
+                            pellentesque habitant morbi tristique senectus et. Nulla facilisi etiam dignissim diam
+                            quis
                             enim.</p>
                     </div>
                     <div class="modal-footer">
@@ -468,63 +495,78 @@
                     </div>
                     <div class="modal-body">
                         <p class="text mx-5">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
                             labore et dolore magna
                             aliqua. Netus et malesuada fames ac turpis egestas. Dui id ornare arcu odio ut sem nulla
                             pharetra diam. Arcu odio ut sem
-                            nulla pharetra. Penatibus et magnis dis parturient montes nascetur. Commodo viverra maecenas
+                            nulla pharetra. Penatibus et magnis dis parturient montes nascetur. Commodo viverra
+                            maecenas
                             accumsan lacus vel.
-                            Habitasse platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas volutpat blandit
+                            Habitasse platea dictumst vestibulum rhoncus est. Blandit volutpat maecenas volutpat
+                            blandit
                             aliquam. Quisque sagittis
                             purus sit amet volutpat consequat mauris nunc congue. Amet aliquam id diam maecenas
                             ultricies mi eget mauris pharetra.
                             Ante metus dictum at tempor commodo ullamcorper a. Est ullamcorper eget nulla
                             facilisi.<br><br>
 
-                            Condimentum vitae sapien pellentesque habitant morbi. Est sit amet facilisis magna etiam.
+                            Condimentum vitae sapien pellentesque habitant morbi. Est sit amet facilisis magna
+                            etiam.
                             Enim blandit volutpat maecenas
                             volutpat blandit aliquam. Purus sit amet volutpat consequat mauris nunc congue nisi.
                             Facilisi morbi tempus iaculis urna
                             id volutpat. Egestas congue quisque egestas diam in arcu cursus. Sed egestas egestas
                             fringilla phasellus faucibus.
-                            Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Sit amet nisl
+                            Sapien pellentesque habitant morbi tristique senectus et netus et malesuada. Sit amet
+                            nisl
                             suscipit adipiscing bibendum
                             est ultricies. Eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper. Pulvinar
                             pellentesque habitant morbi
-                            tristique senectus et netus. Rhoncus mattis rhoncus urna neque viverra justo nec ultrices
+                            tristique senectus et netus. Rhoncus mattis rhoncus urna neque viverra justo nec
+                            ultrices
                             dui. Neque convallis a cras
                             semper auctor neque vitae tempus. Pulvinar elementum integer enim neque volutpat ac
                             tincidunt vitae semper. Imperdiet
                             sed euismod nisi porta lorem mollis aliquam ut porttitor. Ut faucibus pulvinar elementum
                             integer enim neque volutpat ac
-                            tincidunt. Volutpat est velit egestas dui. At ultrices mi tempus imperdiet nulla malesuada
+                            tincidunt. Volutpat est velit egestas dui. At ultrices mi tempus imperdiet nulla
+                            malesuada
                             pellentesque elit eget.<br><br>
 
                             Nam aliquam sem et tortor consequat id porta nibh venenatis. Adipiscing elit ut aliquam
                             purus sit. Et ligula ullamcorper
-                            malesuada proin libero nunc consequat interdum. At augue eget arcu dictum varius. Arcu odio
+                            malesuada proin libero nunc consequat interdum. At augue eget arcu dictum varius. Arcu
+                            odio
                             ut sem nulla pharetra diam
-                            sit amet nisl. Sed viverra ipsum nunc aliquet bibendum enim. Quam quisque id diam vel quam
+                            sit amet nisl. Sed viverra ipsum nunc aliquet bibendum enim. Quam quisque id diam vel
+                            quam
                             elementum pulvinar etiam non.
-                            Dictum sit amet justo donec enim diam vulputate ut pharetra. Ut porttitor leo a diam. Nam
+                            Dictum sit amet justo donec enim diam vulputate ut pharetra. Ut porttitor leo a diam.
+                            Nam
                             aliquam sem et tortor
-                            consequat id. Nunc non blandit massa enim. Nullam eget felis eget nunc lobortis mattis. Amet
+                            consequat id. Nunc non blandit massa enim. Nullam eget felis eget nunc lobortis mattis.
+                            Amet
                             facilisis magna etiam
-                            tempor orci. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Iaculis urna id
+                            tempor orci. Pulvinar sapien et ligula ullamcorper malesuada proin libero. Iaculis urna
+                            id
                             volutpat lacus laoreet non
                             curabitur gravida.<br><br>
 
                             Mauris a diam maecenas sed enim ut sem viverra. Dui faucibus in ornare quam viverra orci
                             sagittis. Lacus vel facilisis
-                            volutpat est velit egestas dui. Viverra ipsum nunc aliquet bibendum enim facilisis gravida.
+                            volutpat est velit egestas dui. Viverra ipsum nunc aliquet bibendum enim facilisis
+                            gravida.
                             Scelerisque eu ultrices
                             vitae auctor eu. Sed vulputate odio ut enim blandit. Et malesuada fames ac turpis.
                             Ullamcorper a lacus vestibulum sed.
-                            Aliquam faucibus purus in massa tempor nec. Purus viverra accumsan in nisl nisi scelerisque.
+                            Aliquam faucibus purus in massa tempor nec. Purus viverra accumsan in nisl nisi
+                            scelerisque.
                             Aliquet bibendum enim
                             facilisis gravida neque. Consequat interdum varius sit amet mattis vulputate enim.
                             Consectetur adipiscing elit
-                            pellentesque habitant morbi tristique senectus et. Nulla facilisi etiam dignissim diam quis
+                            pellentesque habitant morbi tristique senectus et. Nulla facilisi etiam dignissim diam
+                            quis
                             enim.</p>
                     </div>
                     <div class="modal-footer">
@@ -538,6 +580,10 @@
             </div>
         </div>
         <!-- Central Modal large -->
+        <div onclick="scrollToTop();return false" id="top-btn" class="btn top-btn">
+            <i class="fas fa-angle-up"></i>
+        </div>
+    </div>
     </div>
 
     <!-- JQuery -->
