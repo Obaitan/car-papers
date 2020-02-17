@@ -756,7 +756,7 @@ a.l-info:hover {
 
 .sp-logo {
     position: absolute;
-    top: 40px;
+    top: 30px;
     left: 100px;
     width: 170px;
 }
@@ -767,12 +767,21 @@ a.l-info:hover {
     justify-content: center;
     align-items: center;
     background-color: #ecf3f3;
-    padding: 2rem 10rem;
+    padding: 2rem 9rem;
     text-align: center;
 }
 
 #s-logo {
     width: 50%;
+}
+
+@media only screen and (max-width: 1600px) {
+    .s-half, {
+        padding: 2rem 5rem;
+    }
+    .other-half {
+        padding: 3rem 6rem;
+    }
 }
 
 @media only screen and (max-width: 1025px) {
@@ -798,9 +807,18 @@ a.l-info:hover {
     .h-div3 {
         top: 7rem;
     }
+    .s-half {
+        padding: 2rem 10rem;
+    }
+    .other-half {
+        padding: 3rem 15rem;
+    }
 }
 
 @media (max-width: 768px) {
+    .sp-logo {
+        width: 135px;
+    }
     .h-logo {
         top: 20px;
     }
@@ -808,7 +826,7 @@ a.l-info:hover {
         width: 80%;
     }
     .other-half {
-        padding: 2rem;
+        padding: 3rem 12rem;
     }
     .login-backdrop {
         height: fit-content;
@@ -848,11 +866,24 @@ a.l-info:hover {
     }
     .c-ways {
         flex-wrap: wrap;
-        /* justify-content: center; */
     }
 }
 
 @media (max-width: 575px) {
+    .s-half {
+        padding: 2rem;
+    }
+    .other-half {
+        padding: 3rem;
+    }
+    .sp-logo {
+        top: 15px;
+        left: 25px;
+        width: 110px;
+    }
+    .info4 {
+        font-size: 1.25rem;
+    }
     .nav {
         height: 100%;
     }
