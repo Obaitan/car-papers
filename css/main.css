@@ -178,7 +178,7 @@ li {
 
 .h-logo {
     position: absolute;
-    top: 40px;
+    top: 30px;
     width: 200px;
 }
 
@@ -483,7 +483,7 @@ ul.timeline>li:before {
 .app-heading {
     font-family: 'Muli', sans-serif;
     font-size: 2.75rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #3f51b5;
     font-weight: 600;
     letter-spacing: .1rem;
@@ -496,7 +496,7 @@ ul.timeline>li:before {
 
 .gen-text {
     font-family: 'Questrial', sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     line-height: 1.2;
     color: #1b212c;
 }
@@ -801,6 +801,9 @@ a.l-info:hover {
 }
 
 @media (max-width: 768px) {
+    .h-logo {
+        top: 20px;
+    }
     form {
         width: 80%;
     }
@@ -855,6 +858,10 @@ a.l-info:hover {
     }
     #logo {
         width: 75%;
+    }
+    .h-logo {
+        width: 135px;
+        top: 15px;
     }
     .ring {
         height: 2.5rem;
