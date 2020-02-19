@@ -278,7 +278,7 @@ hr.red-line {
     font-family: 'Muli', sans-serif;
     font-size: 1.65rem;
     text-transform: uppercase;
-    color: #3f51b5;
+    color: #016868;
     font-weight: 600;
     letter-spacing: .1rem;
     margin-bottom: 0;
@@ -297,7 +297,7 @@ hr.red-line {
 .heading3 {
     font-family: 'Muli', sans-serif;
     font-size: 1.1rem;
-    color: #3f51b5;
+    color: #016868;
     font-weight: 600;
     margin-bottom: 0;
 }
@@ -319,7 +319,7 @@ a.terms:hover {
 
 .highlight3 {
     font-size: 1.65rem;
-    color: #3f51b5;
+    color: #016868;
 }
 
 .mi {
@@ -430,7 +430,7 @@ ul.timeline>li:before {
 }
 
 .bluish {
-    background-color: #3f51b5;
+    background-color: #016868;
     height: auto;
     display: flex;
     align-items: center;
@@ -484,7 +484,7 @@ ul.timeline>li:before {
     font-family: 'Muli', sans-serif;
     font-size: 2.75rem;
     /* text-transform: uppercase; */
-    color: #3f51b5;
+    color: #016868;
     font-weight: 600;
     letter-spacing: .1rem;
     margin-bottom: 1rem;
@@ -525,7 +525,7 @@ ul.timeline>li:before {
 }
 
 .icon-link {
-    color: #3f51b5 !important;
+    color: #016868 !important;
     padding: 0;
     text-decoration: none !important;
     margin: 1rem 1.5rem;
@@ -561,7 +561,7 @@ ul.timeline>li:before {
     font-size: .93rem;
     font-weight: 600;
     text-transform: capitalize;
-    color: #3f51b5;
+    color: #016868;
 }
 
 .text {
@@ -593,7 +593,7 @@ ul.timeline>li:before {
 }
 
 .footer-info {
-    color: #3f51b5;
+    color: #016868;
 }
 
 .info2, .info3 {
@@ -605,12 +605,12 @@ ul.timeline>li:before {
 }
 
 a.low-link {
-    color: #3f51b5;
+    color: #016868;
     text-decoration: none;
 }
 
 a.low-link:hover {
-    color: #3f51b5;
+    color: #016868;
     text-decoration: none;
     opacity: .6;
 }
@@ -730,7 +730,7 @@ form {
 a.l-info {
     font-weight: 600;
     text-decoration: none;
-    color: #3f51b5;
+    color: #016868;
 }
 
 a.l-info:hover {

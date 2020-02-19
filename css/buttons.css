@@ -70,32 +70,32 @@
 
 .btn-support {
     color: #fff;
-    background-color: #3f51b5;
-    border-color: #344397
+    background-color: #016868;
+    border-color: #035858
 }
 
 .btn-support.focus, .btn-support:focus {
     color: #fff;
-    background-color: #27368a;
-    border-color: #262f63
+    background-color: #036d6d;
+    border-color: #035858
 }
 
 .btn-support:hover {
     color: #fff;
-    background-color: #27368a;
-    border-color: #2c3985
+    background-color: #036d6d;
+    border-color: #046363
 }
 
 .btn-support.active, .btn-support:active, .open>.dropdown-toggle.btn-support {
     color: #fff;
-    background-color: #27368a;
-    border-color: #262f63
+    background-color: #036d6d;
+    border-color: #035858
 }
 
 .btn-support.active.focus, .btn-support.active:focus, .btn-support.active:hover, .btn-support:active.focus, .btn-support:active:focus, .btn-support:active:hover, .open>.dropdown-toggle.btn-support.focus, .open>.dropdown-toggle.btn-support:focus, .open>.dropdown-toggle.btn-support:hover {
     color: #fff;
-    background-color: #344397;
-    border-color: #262f63
+    background-color: #016868;
+    border-color: #035858
 }
 
 .btn-support.active, .btn-support:active, .open>.dropdown-toggle.btn-support {
@@ -103,12 +103,12 @@
 }
 
 .btn-support.disabled.focus, .btn-support.disabled:focus, .btn-support.disabled:hover, .btn-support[disabled].focus, .btn-support[disabled]:focus, .btn-support[disabled]:hover, fieldset[disabled] .btn-support.focus, fieldset[disabled] .btn-support:focus, fieldset[disabled] .btn-support:hover {
-    background-color: #3f51b5;
-    border-color: #344397
+    background-color: #016868;
+    border-color: #016868
 }
 
 .btn-support .badge {
-    color: #3f51b5;
+    color: #016868;
     background-color: #fff
 }
 
