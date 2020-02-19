@@ -20580,6 +20580,13 @@ ul li, ol li, dl li {
   width: 100%;
   -webkit-flex-grow: 1;
   flex-grow: 1;
+  margin-left: 240px;
+}
+
+@media (max-width: 992px) {
+  .content-wrapper {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -20591,7 +20598,9 @@ ul li, ol li, dl li {
 /* Sidebar */
 
 .sidebar {
-  min-height: calc(100vh - 60px);
+  position: fixed;
+  height: 100vh;
+  /* min-height: calc(100vh - 60px); */
   background: #45e644;
   font-family: "Karla", sans-serif;
   font-weight: normal;
@@ -21650,6 +21659,12 @@ ul li, ol li, dl li {
 }
 
 /* Custom */
+
+/* .logo {
+  position: fixed;
+  top: 30px;
+  width: 125px;
+} */
 
 .beed {
   position: absolute;
