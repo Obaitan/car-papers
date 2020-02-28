@@ -86,7 +86,7 @@ body {
 
 #logo {
     margin-top: 4rem;
-    width: 90%;
+    width: 75%;
 }
 
 ul {
@@ -179,7 +179,7 @@ li {
 .h-logo {
     position: absolute;
     top: 30px;
-    width: 200px;
+    width: 150px;
 }
 
 .h-text, .h-text2 {
@@ -758,7 +758,7 @@ a.l-info:hover {
     position: absolute;
     top: 30px;
     left: 100px;
-    width: 170px;
+    width: 100px;
 }
 
 .s-half {
@@ -776,7 +776,7 @@ a.l-info:hover {
 }
 
 @media only screen and (max-width: 1575px) {
-    .s-half, {
+    .s-half {
         padding: 2rem 5rem;
     }
     .other-half {
@@ -826,7 +826,7 @@ a.l-info:hover {
 
 @media (max-width: 768px) {
     .sp-logo {
-        width: 135px;
+        width: 100px;
     }
     .h-logo {
         top: 20px;
@@ -888,7 +888,7 @@ a.l-info:hover {
     .sp-logo {
         top: 15px;
         left: 25px;
-        width: 110px;
+        width: 75px;
     }
     #s-logo {
         width: 60%;
@@ -900,10 +900,10 @@ a.l-info:hover {
         height: 100%;
     }
     #logo {
-        width: 75%;
+        width: 60%;
     }
     .h-logo {
-        width: 135px;
+        width: 100px;
         top: 15px;
     }
     .ring {
