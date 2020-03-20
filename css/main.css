@@ -86,7 +86,7 @@ body {
 
 #logo {
     margin-top: 4rem;
-    width: 75%;
+    width: 100%;
 }
 
 ul {
@@ -179,7 +179,7 @@ li {
 .h-logo {
     position: absolute;
     top: 30px;
-    width: 150px;
+    width: 225px;
 }
 
 .h-text, .h-text2 {
