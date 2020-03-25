@@ -758,7 +758,7 @@ a.l-info:hover {
     position: absolute;
     top: 30px;
     left: 100px;
-    width: 100px;
+    width: 200px;
 }
 
 .s-half {
@@ -825,9 +825,6 @@ a.l-info:hover {
 }
 
 @media (max-width: 768px) {
-    .sp-logo {
-        width: 100px;
-    }
     .h-logo {
         top: 20px;
     }
@@ -888,7 +885,7 @@ a.l-info:hover {
     .sp-logo {
         top: 15px;
         left: 25px;
-        width: 75px;
+        width: 180px;
     }
     #s-logo {
         width: 60%;

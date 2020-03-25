@@ -107,11 +107,17 @@ a.link2:hover {
     .box2 {
         width: 55%;
     }
+    .o-logo {
+        width: 25%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
     .box, .box2 {
         width: 65%;
+    }
+    .o-logo {
+        width: 30%;
     }
 }
 
@@ -125,6 +131,9 @@ a.link2:hover {
     }
     .bold2 {
         font-size: 1.5rem;
+    }
+    .o-logo {
+        width: 60%;
     }
 }
 
